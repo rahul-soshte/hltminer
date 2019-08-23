@@ -1,5 +1,5 @@
 
-# HunterLabsToken ERC20 Token Miner
+# HunterLabsToken ERC20 Token Miner(Only command line working right now)
 
 Solves proof of work to mine supported ERC20 tokens.  
 
