@@ -1,18 +1,18 @@
 
-# 0xBitcoin ERC20 Token Miner
+# HunterLabsToken ERC20 Token Miner
 
 Solves proof of work to mine supported ERC20 tokens.  
 
 
 
-### Update 1.5.23 - 1000X CPU Pool Mining
+<!-- ### Update 1.5.23 - 1000X CPU Pool Mining
 
-This new build uses the C++ addon to accelerate the CPU mining one-thousand fold.  Pool mine with the command 'pool mine'.  Select a different pool with 'pool select http://...'.  Keep in mind that this update will migrate all vault data to a new and improved version so be sure to back up your private keys.  1.5.20 fixes bugs with solo mining and adds 'test mine' command.
-
-### Official Releases Downloads
+This new build uses the C++ addon to accelerate the CPU mining one-thousand fold.  Pool mine with the command 'pool mine'.  Select a different pool with 'pool select http://...'.  Keep in mind that this update will migrate all vault data to a new and improved version so be sure to back up your private keys.  1.0.0 fixes bugs with solo mining and adds 'test mine' command.
+ -->
+<!-- ### Official Releases Downloads
 
 [Download Packaged Releases](https://github.com/0xbitcoin/0xbitcoin-miner/blob/master/RELEASES.md)
-
+ -->
 
 
 ### Building from Source
@@ -34,7 +34,6 @@ This new build uses the C++ addon to accelerate the CPU mining one-thousand fold
 6. Start the miner with 'node index.js'
 
 
-
 ### Commands
 
       {commands}
@@ -52,12 +51,11 @@ This new build uses the C++ addon to accelerate the CPU mining one-thousand fold
       "config cpu_threads #" - Set the number of CPU cores to use for mining
       "config web3provider http://----:####" - Set the web3 provider url for submitting ethereum transactions
 
-      "pool mine" - Begin mining into a pool
+      "pool mine" - Begin mining into a pool(Not available)
       "pool list" - List the selected mining pool
-      "pool select http://####.com:####" - Select a pool to mine into
+      "pool select http://####.com:####" - Select a pool to mine into(Not available)
 
-      "mine" - Begin mining solo, directly into the smartcontract
-
+      "mine" - Begin mining solo, directly into the smartcontract(Not available)
 
 
 
@@ -67,13 +65,13 @@ This new build uses the C++ addon to accelerate the CPU mining one-thousand fold
 1. Build a new mining account with 'account new'
 2. View the private key with 'account list'
 3. Write down these credentials
-4. Mine 0xbitcoin tokens with the command 'mine'
+4. Mine HunterLabsToken with the command 'mine'
 
-Note that IF SOLO MINING it is necessary to fill the mining account (it is an Ethereum account) with a small amount of ether.  Typically 0.005 eth is good enough to get started.  The ether is used for gas to make function calls to the token smart contract when your miner finds a solution to the Proof of Work.  When the gas is spent that means that you have found a solution! If you were the first to find it, you will be rewarded with 0xbitcoin tokens.  (See the block explorer for typical gas prices at the current moment.)
+Note that IF SOLO MINING it is necessary to fill the mining account (it is an Ethereum account) with a small amount of ether.  Typically 0.005 eth is good enough to get started.  The ether is used for gas to make function calls to the token smart contract when your miner finds a solution to the Proof of Work.  When the gas is spent that means that you have found a solution! If you were the first to find it, you will be rewarded with HunterLabsToken.  (See the block explorer for typical gas prices at the current moment.)
 
 
 
-### Pool Mining
+### Pool Mining(Not working yet)
 - You can mine into a pool with the command 'pool mine'  
 - When mining into a pool, your gasprice does not matter and you will pay NO GAS FEES  
 - Every pool is different so consult each pool owner.  Typically, pools will offer a token withdraw mechanism or automatically send tokens to your address on a periodic basis or when a limit is reached
@@ -87,13 +85,13 @@ Note that IF SOLO MINING it is necessary to fill the mining account (it is an Et
 Stored at:
 
 - Windows
-    '/Users/{user}/Appdata/Roaming/.0xbitcoin'
+    '/Users/{user}/Appdata/Roaming/.hlt'
 
 - Mac
-    '/home/{user}/Library/Preferences/.0xbitcoin'
+    '/home/{user}/Library/Preferences/.hlt'
 
 - Linux
-    '/home/{user}/.0xbitcoin'
+    '/home/{user}/.hlt'
 
 
 
@@ -111,6 +109,7 @@ npm run test
 
 
 
-## Tokens that can be mined using Proof of Work:
+<!-- ## Tokens that can be mined using Proof of Work: -->
 
-1. 0xBitcoin token - http://0xbitcoin.org - https://github.com/0xbitcoin/0xbitcoin-token
+<!-- 1. 0xBitcoin token - http://0xbitcoin.org - https://github.com/0xbitcoin/0xbitcoin-token
+ -->

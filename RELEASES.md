@@ -1,4 +1,4 @@
-## GPU Mining Software for 0xBTC and EIP918 Tokens 
+<!-- ## GPU Mining Software for 0xBTC and EIP918 Tokens 
 
 * SoliditySHA3Miner (Windows/Linux)(nVidia OR AMD):
 
@@ -46,3 +46,4 @@ This new build uses the C++ addon to accelerate the CPU mining one-thousand fold
 
 * [Windows Miner 1.5.23](https://github.com/0xbitcoin/0xbitcoin-miner/raw/master/dist/0xbtcminer-win.zip)
 * [Linux Miner 1.5.23](https://github.com/0xbitcoin/0xbitcoin-miner/raw/master/dist/0xbtcminer-linux.zip)
+ -->
