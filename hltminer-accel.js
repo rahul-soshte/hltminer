@@ -6,7 +6,7 @@ const BN = require('bn.js');
 
 var debugLogger = require('./lib/debug-logger')
 
-var tokenContractJSON = require('./contracts/_0xBitcoinToken.json');
+var tokenContractJSON = require('./contracts/HunterLabsToken3.json');
 
 var CPUMiner = require('./build/Release/cpuminer');
 

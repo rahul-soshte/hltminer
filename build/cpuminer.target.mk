@@ -35,13 +35,16 @@ CFLAGS_CC_Debug := \
 	-std=c++17 \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++0x
+	-std=gnu++1y
 
 INCS_Debug := \
-	-I/home/andy/.node-gyp/8.9.0/include/node \
-	-I/home/andy/.node-gyp/8.9.0/src \
-	-I/home/andy/.node-gyp/8.9.0/deps/uv/include \
-	-I/home/andy/.node-gyp/8.9.0/deps/v8/include \
+	-I/home/hunter/.node-gyp/10.16.0/include/node \
+	-I/home/hunter/.node-gyp/10.16.0/src \
+	-I/home/hunter/.node-gyp/10.16.0/deps/openssl/config \
+	-I/home/hunter/.node-gyp/10.16.0/deps/openssl/openssl/include \
+	-I/home/hunter/.node-gyp/10.16.0/deps/uv/include \
+	-I/home/hunter/.node-gyp/10.16.0/deps/zlib \
+	-I/home/hunter/.node-gyp/10.16.0/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 
 DEFS_Release := \
@@ -74,13 +77,16 @@ CFLAGS_CC_Release := \
 	-std=c++17 \
 	-fno-rtti \
 	-fno-exceptions \
-	-std=gnu++0x
+	-std=gnu++1y
 
 INCS_Release := \
-	-I/home/andy/.node-gyp/8.9.0/include/node \
-	-I/home/andy/.node-gyp/8.9.0/src \
-	-I/home/andy/.node-gyp/8.9.0/deps/uv/include \
-	-I/home/andy/.node-gyp/8.9.0/deps/v8/include \
+	-I/home/hunter/.node-gyp/10.16.0/include/node \
+	-I/home/hunter/.node-gyp/10.16.0/src \
+	-I/home/hunter/.node-gyp/10.16.0/deps/openssl/config \
+	-I/home/hunter/.node-gyp/10.16.0/deps/openssl/openssl/include \
+	-I/home/hunter/.node-gyp/10.16.0/deps/uv/include \
+	-I/home/hunter/.node-gyp/10.16.0/deps/zlib \
+	-I/home/hunter/.node-gyp/10.16.0/deps/v8/include \
 	-I$(srcdir)/node_modules/nan
 
 OBJS := \

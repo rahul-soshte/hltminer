@@ -1,5 +1,5 @@
 
-const Miner = require("./0xbitcoinminer-accel");
+const Miner = require("./hltminer-accel");
 
 const Vault = require("./lib/vault");
 
@@ -25,7 +25,7 @@ var web3 = new Web3( );
 
 var running = true;
 
-console.log('Welcome to 0xBitcoin Miner!')
+console.log('Welcome to HLT Miner!')
 console.log('Version: ',pjson.version)
 console.log('\n')
 console.log('Type a command to get started.  Type "help" for a list of commands.')
@@ -145,8 +145,8 @@ async function handleCommand(result)
     Vault.requirePassword(true) //for encryption of private key !
 
 
-    var infura_provider_url = 'https://ropsten.infura.io/gmXEVo5luMPUGPqg6mhy';
-    var ropsten_contract_address = ContractInterface.networks.testnet.contracts._0xbitcointoken.blockchain_address
+    var infura_provider_url = 'https://ropsten.infura.io/v3/07b6050680014541860ede962a2489c8';
+    var ropsten_contract_address = ContractInterface.networks.testnet.contracts.HunterLabsToken3.blockchain_address
 
     Vault.setWeb3ProviderUrl(infura_provider_url);
     Vault.selectContract(ropsten_contract_address);
@@ -157,7 +157,7 @@ async function handleCommand(result)
     if(!unlocked)return false;
 
       web3.setProvider(infura_provider_url)
-        Vault.selectContract(ropsten_contract_address);
+      Vault.selectContract(ropsten_contract_address);
 
     NetworkInterface.init(web3, Vault, miningLogger);
 
@@ -193,7 +193,7 @@ async function handleCommand(result)
   if(subsystem_name == 'help')
   {
     console.log('\n\n')
-    console.log('--0xBitcoin Miner Help--\n')
+    console.log('--Miner Help--\n')
     console.log('Available commands:\n')
     console.log('"account new" - Create a new mining account ')
     console.log('"account list" - List all mining accounts ')
